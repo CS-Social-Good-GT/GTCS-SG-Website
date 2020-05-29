@@ -34,6 +34,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+studio/node_modules/
+web/node_modules
 jspm_packages/
 
 # Typescript v1 declaration files
@@ -71,3 +73,6 @@ yarn-error.log
 
 # Text Editors
 .vscode/
+
+
+node_modules
