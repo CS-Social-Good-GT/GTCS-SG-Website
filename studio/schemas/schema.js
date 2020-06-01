@@ -9,6 +9,10 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     blogPost,
-    sponsor
+    sponsor,
+    member,
+    project,
+    sponsor,
+    team,
   ])
 })
