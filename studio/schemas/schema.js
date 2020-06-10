@@ -3,6 +3,9 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 import blogPost from './blogPost';
 import sponsor from './sponsor';
+import project from './project';
+import member from './member';
+import team from './team';
 
 export default createSchema({
   name: 'default',
@@ -10,5 +13,8 @@ export default createSchema({
     /* Your types here! */
     blogPost,
     sponsor,
+    project,
+    member,
+    team
   ])
 })
