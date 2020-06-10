@@ -16,7 +16,8 @@ const IndexPage = () => (
     <SEO title="Home" />
       <div>
           <h1>GT CS + Social Good</h1>
-          <p>We empower students to leverage technology for social good by inspiring action, facilitating collaboration, and forging pathways towards change.</p>
+          <p>We empower students to leverage technology for social good by inspiring action, 
+              facilitating collaboration, and forging pathways towards change.</p>
       </div>
     
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
