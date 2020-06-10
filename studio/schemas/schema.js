@@ -10,9 +10,5 @@ export default createSchema({
     /* Your types here! */
     blogPost,
     sponsor,
-    member,
-    project,
-    sponsor,
-    team,
   ])
 })
