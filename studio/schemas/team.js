@@ -1,7 +1,7 @@
 export default {
     name: 'team',
     title: 'Team',
-    type: 'object',
+    type: 'document',
     fields: [
       {
         name: 'description',
