@@ -1,7 +1,7 @@
 export default {
     name: 'sponsor',
     title: 'Sponsor',
-    type: 'object',
+    type: 'document',
     fields: [
       {
         name: 'name',
