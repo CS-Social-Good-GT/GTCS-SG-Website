@@ -5,26 +5,40 @@ import Styled from 'styled-components'
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import HeroDiv from "../components/HeroDiv"
+import AboutUs from "../components/AboutUs"
+import TeamsDiv from "../components/TeamsDiv"
+import WorkDiv from "../components/WorkDiv"
+import Sponsors from "../components/Sponsors"
+import Footer from "../components/Footer"
+
 
 const Styles = Styled.section`
-
-`;
+   //add any styles here (as if this were a css file)
+   `;
 
 const IndexPage = () => (
   <Layout>
     <Styles>
     <SEO title="Home" />
       <div>
-          <h1>GT CS + Social Good</h1>
-          <p>We empower students to leverage technology for social good by inspiring action, 
-              facilitating collaboration, and forging pathways towards change.</p>
+          <HeroDiv />
       </div>
-    
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+      <div>
+          <AboutUs />
+      </div>
+      <div>
+          <TeamsDiv />
+      </div>
+      <div>
+          <WorkDiv />
+      </div>
+      <div>
+          <Sponsors />
+      </div>
+      <div>
+          <Footer />
+      </div>
     </Styles>
   </Layout>
 )
