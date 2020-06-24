@@ -1,3 +1,4 @@
+import member from './member'
 export default {
     name: 'team',
     title: 'Team',
@@ -17,6 +18,12 @@ export default {
         name: 'header',
         title: 'Header Image',
         type: 'image'
+      },
+      {
+        name: 'members',
+        title: 'Members',
+        type: 'array',
+        of: [{type: 'member'}]
       }
     ]
   }

@@ -1,7 +1,7 @@
 export default {
     name: 'member',
     title: 'Member',
-    type: 'document',
+    type: 'object',
     fields: [
       {
         name: 'name',
