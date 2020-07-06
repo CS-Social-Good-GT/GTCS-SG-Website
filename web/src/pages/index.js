@@ -15,6 +15,9 @@ import Footer from "../components/Footer"
 
 const Styles = Styled.section`
    //add any styles here (as if this were a css file)
+   .container {
+     width: 100vw;
+   }
    `;
 
 const IndexPage = () => (
