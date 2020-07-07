@@ -74,5 +74,5 @@ yarn-error.log
 # Text Editors
 .vscode/
 
-
+.history
 node_modules

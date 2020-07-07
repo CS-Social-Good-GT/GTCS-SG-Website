@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1595px" height="825px" viewBox="0 0 1595 825" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="64.4325316%" x2="0%" y2="64.4325304%" id="linearGradient-1">
+            <stop stop-color="#21EFBD" offset="0%"></stop>
+            <stop stop-color="#07BBBA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="2.92855853%" y1="44.5153277%" x2="100%" y2="44.5153266%" id="linearGradient-2">
+            <stop stop-color="#21EFBD" offset="0%"></stop>
+            <stop stop-color="#07BBBA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="47.8937405%" x2="97.5072254%" y2="49.9474957%" id="linearGradient-3">
+            <stop stop-color="#07BBBA" offset="0%"></stop>
+            <stop stop-color="#21EFBD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="34.1421247%" x2="2.92855855%" y2="34.142125%" id="linearGradient-4">
+            <stop stop-color="#21EFBD" offset="0%"></stop>
+            <stop stop-color="#07BBBA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -2.000000)">
+            <polygon id="Path" fill="url(#linearGradient-1)" transform="translate(240.500000, 557.000000) scale(1, -1) translate(-240.500000, -557.000000) " points="0 578.934974 481 290 481 531.436789 0 824"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-2)" points="1591 532.065026 1199 821 1199 579.563211 1591 287"></polygon>
+            <polygon id="Path-2" fill="url(#linearGradient-3)" points="481 6 1199 581.006148 1199 820 481 244.130015"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-4)" opacity="0.8" points="1591 288.934974 1591 534 1199 241.436789 1199 0"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-2)" opacity="0.8" points="0 292.934974 481 4 481 245.436789 0 538"></polygon>
+        </g>
+    </g>
+</svg>

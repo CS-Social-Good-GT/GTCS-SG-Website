@@ -6,6 +6,21 @@ const Styles = styled.section`
     background-color: white;
     margin: auto;
 `;
+const data = useStaticQuery(graphql`
+query MyQuery {
+  allSanityTeam {
+    edges {
+      node {
+        name
+        header {
+          asset {
+            url
+          }
+        }
+      }
+    }
+  }
+}`)
 
 const TeamsDiv = () => (
   <Styles>
