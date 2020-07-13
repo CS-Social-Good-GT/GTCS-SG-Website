@@ -7,7 +7,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import HeroDiv from "../components/HeroDiv"
 import AboutUs from "../components/AboutUs"
-import TeamsDiv from "../components/TeamsDiv"
+import TeamCardsDiv from "../components/TeamCardsDiv"
 import WorkDiv from "../components/WorkDiv"
 import Sponsors from "../components/Sponsors"
 import Footer from "../components/Footer"
@@ -31,7 +31,7 @@ const IndexPage = () => (
           <AboutUs />
       </div>
       <div>
-          <TeamsDiv />
+          <TeamCardsDiv />
       </div>
       <div>
           <WorkDiv />

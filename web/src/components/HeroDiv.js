@@ -6,6 +6,8 @@ const Styles = styled.section`
     background-image: url(${logo});
     background-size: cover;  
     background-repeat: no-repeat;
+    background-attachment: fixed;
+
     
     h1 {
         padding-top: 40%;
