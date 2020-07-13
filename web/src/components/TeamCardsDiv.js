@@ -69,7 +69,9 @@ const TeamCardsDiv = () => {
           name
           header {
             asset {
-              url
+              fluid {
+                src
+              }
             }
           }
         }
@@ -87,7 +89,8 @@ console.log(data)
         <div class="row align-items-center">
           <div class="col-md">
             <div class="card text-center pb_card_v1 mb-4">
-              <img class="card-img-top rounded-circle w-50 mx-auto" src={item.node.url} alt="Team Logo"/>
+              
+              {/* <img class="card-img-top rounded-circle w-50 mx-auto" src={item.node.header.asset.fluid.src} alt="Team Logo"/> */}
               <div class="card-body">
   <h4 class="card">{item.node.name}</h4>
   <a class="learn-more">Learn more!</a>
