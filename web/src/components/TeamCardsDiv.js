@@ -52,17 +52,19 @@ const Styles = styled.section`
         background-clip: border-box;
         border: 1px solid rgba(0, 0, 0, 0.125);
         border-radius: 0.25rem;
-        height: 10%;
-        width: 10%;
+        height: auto;
+        width: 274px;
     
     }
+    .card-img-top rounded-circle w-50 mx-auto 
     
 `;
 
 
 const TeamCardsDiv = () => {
   const data = useStaticQuery(graphql`
-  query MyTeamQuery {
+
+  query MyQueryTeams {
     allSanityTeam {
       edges {
         node {
@@ -90,10 +92,11 @@ console.log(data)
           <div class="col-md">
             <div class="card text-center pb_card_v1 mb-4">
               
-              {/* <img class="card-img-top rounded-circle w-50 mx-auto" src={item.node.header.asset.fluid.src} alt="Team Logo"/> */}
+              {/* <img class="card-img-top rounded-circle w-50 mx-auto" src={(item.node.header.asset.fluid.src)} alt="Team Logo"/> */}
+              <img class="card-img-top rounded-circle w-50 mx-auto" src={(logo)} alt="Team Logo"/>
               <div class="card-body">
-  <h4 class="card">{item.node.name}</h4>
-  <a class="learn-more">Learn more!</a>
+                <h4 class="card">{item.node.name}</h4>
+                <a class="learn-more">Learn more!</a>
                 {/* <p><a class="learn-more" id="inspiration" style="color: rgb(0, 230, 230);" onmouseover="this.style.color='#008080'" onmouseout="this.style.color='#00e6e6'">Learn more!</a></p> */}
               </div>
             </div>
@@ -101,6 +104,7 @@ console.log(data)
           
           
         </div>
+        <br></br>
       </div>
 
 
