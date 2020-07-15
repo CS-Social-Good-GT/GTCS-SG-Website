@@ -29,35 +29,36 @@ const Styles = styled.section`
   transition: .3s all ease-out;
   background: #fff !important;
   box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.15);
-  .nav-link {
-    display: block;
+  li {
+    display: inline-block;
+    padding: 5px;
 }
-  .pb_navbar .nav-link {
-    font-size: 15px;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+  // .pb_navbar .nav-link {
+  //   font-size: 15px;
+  //   padding-left: 1rem !important;
+  //   padding-right: 1rem !important;
 
-  .pb_navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    font-family: "Montserrat", Arial, sans-serif;
-    box-shadow: 0 0 black;
-  }
-.collapse navbar-collapse {
-  line-height: 1.15;
-  -webkit-tap-highlight-color: transparent;
-  font-size: 1em;
-  -webkit-box-direction: normal;
-  font-family: "Montserrat", Arial, sans-serif;
-  box-sizing: inherit;
-  flex-basis: 100%;
-  -webkit-box-align: center;
-  align-items: center;
-  display: flex !important;
-}
+  // .pb_navbar {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 100;
+  //   width: 100%;
+  //   font-family: "Montserrat", Arial, sans-serif;
+  //   box-shadow: 0 0 black;
+  // }
+// .collapse navbar-collapse {
+//   line-height: 1.15;
+//   -webkit-tap-highlight-color: transparent;
+//   font-size: 1em;
+//   -webkit-box-direction: normal;
+//   font-family: "Montserrat", Arial, sans-serif;
+//   box-sizing: inherit;
+//   flex-basis: 100%;
+//   -webkit-box-align: center;
+//   align-items: center;
+//   display: flex !important;
+// }
 
 
   // li {
@@ -85,7 +86,6 @@ const Styles = styled.section`
   `
 const Header = () => (
   <Styles>
-  <header className='my-header'>
   <div>
   <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light scrolled awake" id="pb-navbar">
       <div class="container">
@@ -105,8 +105,7 @@ const Header = () => (
         </div>
       </div>
     </nav>
-        </div>
-        </header>
+  </div>
 </Styles>
   
 )
