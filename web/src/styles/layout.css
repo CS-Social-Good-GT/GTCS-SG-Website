@@ -3,3 +3,7 @@
 html {
     font-family: 'Montserrat', sans-serif;
 }
+
+.sticky {
+    background-color: black;
+}

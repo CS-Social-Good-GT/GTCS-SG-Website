@@ -18,6 +18,7 @@ const Styles = Styled.section`
    .container {
      width: 100vw;
    }
+
    `;
 
 const IndexPage = () => (
@@ -27,19 +28,19 @@ const IndexPage = () => (
       <div>
           <HeroDiv />
       </div>
-      <div>
+      <div id="section-about">
           <AboutUs />
       </div>
-      <div>
+      <div id='section-team'>
           <TeamCardsDiv />
       </div>
-      <div>
+      <div id='section-work'>
           <WorkDiv />
       </div>
-      <div>
+      <div id='section-sponsors'>
           <Sponsors />
       </div>
-      <div>
+      <div id='section-contact'>
           <Footer />
       </div>
     </Styles>

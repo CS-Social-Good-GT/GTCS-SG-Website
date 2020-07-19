@@ -1,19 +1,25 @@
 import styled from 'styled-components'
 import React from "react"
-import logo from '../images/cssg-cropped.png'
+import logo from '../images/logo.svg'
 
 const Styles = styled.section`
-    background-image: url(${logo});
+    background: linear-gradient(0deg, rgba(72,72,74,0.7), rgba(72,72,74,0.7)), url(${logo});
     background-size: cover;  
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
     
     h1 {
         padding-top: 40%;
     }
     h2 {
-        font-size: 70px;
+        font-weight: 350;
+        font-size: 62px;
+    }
+    p {
+        font-size: 20px;
     }
     .myDiv {
         align-items: center;
@@ -23,7 +29,7 @@ const Styles = styled.section`
         margin: auto;
         display: flex;
         font-size: 30px;
-        height: 100vh;     
+        height: 93vh;   
     }
 `;
 

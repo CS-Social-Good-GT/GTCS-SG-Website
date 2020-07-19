@@ -5,107 +5,88 @@ import React from "react"
 import logo from "../images/cssglogocropped.jpg"
 
 const Styles = styled.section`
-  -webkit-tap-highlight-color: transparent;
-  font-size: 1em;
-  box-sizing: inherit;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 1rem 1rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  z-index: 100;
-  width: 100%;
-  font-family: "Montserrat", Arial, sans-serif;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  margin-top: 0px;
-  transition: .3s all ease-out;
-  background: #fff !important;
-  box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.15);
+  .header {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: inherit;
+    z-index: 100;
+    width: 100%;
+    font-family: "Montserrat", Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    transition: .3s all ease-out;
+    box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.15);
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 70px;
+    background: white;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .nav-link, .nav-link:visited {
+    color: #2F2D2E;
+  }
+
+  .nav-link:hover {
+    color: #00e6e6;
+  }
+
   li {
+    line-height: 1.15;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1em;
+    font-family: "Montserrat", Arial, sans-serif;
+    list-style: none;
+    -webkit-box-direction: normal;
+    box-sizing: inherit;  
     display: inline-block;
     padding: 5px;
-}
-  // .pb_navbar .nav-link {
-  //   font-size: 15px;
-  //   padding-left: 1rem !important;
-  //   padding-right: 1rem !important;
+    font-size: 0.9rem;
+  }
 
-  // .pb_navbar {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 100;
-  //   width: 100%;
-  //   font-family: "Montserrat", Arial, sans-serif;
-  //   box-shadow: 0 0 black;
-  // }
-// .collapse navbar-collapse {
-//   line-height: 1.15;
-//   -webkit-tap-highlight-color: transparent;
-//   font-size: 1em;
-//   -webkit-box-direction: normal;
-//   font-family: "Montserrat", Arial, sans-serif;
-//   box-sizing: inherit;
-//   flex-basis: 100%;
-//   -webkit-box-align: center;
-//   align-items: center;
-//   display: flex !important;
-// }
-
-
-  // li {
-  //   line-height: 1.15;
-  //   -webkit-tap-highlight-color: transparent;
-  //   font-size: 1em;
-  //   font-family: "Montserrat", Arial, sans-serif;
-  //   list-style: none;
-  //   -webkit-box-direction: normal;
-  //   box-sizing: inherit;  
-  // }
-  .navbar-brand {
+  .navbar-brand, {
     color: #00e6e6;
     display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
+    font-size: 80px;
     line-height: inherit;
     white-space: nowrap;
-}
-}
+  }
+
+  .navbar-brand:visited {
+    color: #00e6e6;
+  }
+  
+  .navbar-brand:active {
+    color: #00e6e6;
+  }
+
+  .links {
+    float: right;
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
 
 
   `
 const Header = () => (
   <Styles>
-  <div>
-  <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light scrolled awake" id="pb-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="/">GT CS + Social Good</a>
-        {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="ion-navicon"></i></span>
-        </button> */}
-        <div class="collapse navbar-collapse" id="probootstrap-navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="#section-about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-team">Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-work">Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-sponsors">Sponsors</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+  <header className="header">
+        <a className='navbar-brand' href="">GT CS + Social Good</a>
+        <div className="links">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item"><a className="nav-link" href="#section-home">Home</a></li>
+            <li className="nav-item"><a id='about-link' className="nav-link" href="#section-about">About</a></li>
+            <li className="nav-item"><a id='team-link' className="nav-link" href="#section-team">Team</a></li>
+            <li className="nav-item"><a id='work-link' className="nav-link" href="#section-work">Work</a></li>
+            <li className="nav-item"><a id='sponsors-link' className="nav-link" href="#section-sponsors">Sponsors</a></li>
+            <li className="nav-item"><a id='contact-link' className="nav-link" href="#section-contact">Contact</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-  </div>
+  </header>
 </Styles>
   
 )
