@@ -16,8 +16,8 @@ const Styles = styled.section`
     transition: .3s all ease-out;
     box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.15);
     padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
     height: 70px;
     background: white;
   }
@@ -37,22 +37,21 @@ const Styles = styled.section`
   li {
     line-height: 1.15;
     -webkit-tap-highlight-color: transparent;
-    font-size: 1em;
+    font-size: 15px;
     font-family: "Montserrat", Arial, sans-serif;
     list-style: none;
     -webkit-box-direction: normal;
     box-sizing: inherit;  
     display: inline-block;
-    padding: 5px;
-    font-size: 0.9rem;
+    padding-left: 36px;
   }
 
   .navbar-brand, {
     color: #00e6e6;
     display: inline-block;
-    font-size: 80px;
     line-height: inherit;
     white-space: nowrap;
+    font-size: 30px;
   }
 
   .navbar-brand:visited {

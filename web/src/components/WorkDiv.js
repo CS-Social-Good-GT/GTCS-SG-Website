@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Styles = styled.section`
     margin: auto;
-    border: 1px solid black;
     -webkit-tap-highlight-color: transparent;
     font-size: 0.9rem;
     font-weight: 300;

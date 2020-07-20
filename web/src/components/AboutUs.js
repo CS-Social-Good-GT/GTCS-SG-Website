@@ -3,7 +3,6 @@ import React from "react"
 
 
 const Styles = styled.section`
-    border: 1px solid black;
     -webkit-tap-highlight-color: transparent;
     font-size: 0.9rem;
     font-weight: 300;
