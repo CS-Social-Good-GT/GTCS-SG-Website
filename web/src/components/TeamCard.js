@@ -14,21 +14,25 @@ const Styles = styled.section`
         margin: 20px;
         position: relative;
         border-radius: 0.25rem;
+
+        
     }
     .card-img-top {
-        height: 150px;
-        width: 100%;
+        height: 60%;
+        width: 70%;
         transition: display 0.4s;
         top: 10px;
         left: 10px;
-        display: block;
         object-fit: cover;
+        text-align: center;
     }
     .card-body {
         flex: 1 1 auto;
         display: block;
         font-weight: 300;
         text-align: center;
+        right: auto;
+        left: auto;
     }
     h4 {
         font-weight: 300;
@@ -39,7 +43,7 @@ const Styles = styled.section`
 
     a:hover {
         color: #008080;
-    }
+    
 `;
 
 
