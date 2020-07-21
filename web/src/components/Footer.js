@@ -8,6 +8,7 @@ const Styles = styled.section`
 `;
 
 const Footer = () => (
+    <section id='section-contact'>
  <Styles>
   <h1>
       Footer
@@ -18,6 +19,7 @@ const Footer = () => (
     <a href="https://www.gatsbyjs.org">Gatsby</a>
     </footer>
  </Styles>
+ </section>
 )
 
 export default Footer 

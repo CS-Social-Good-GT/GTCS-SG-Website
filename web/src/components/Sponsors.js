@@ -14,11 +14,13 @@ const Styles = styled.section`
 `;
 
 const Sponsors = () => (
+    <section id='section-sponsors'>
  <Styles>  
   <h1>
       Sponsors
   </h1>
   </Styles> 
+  </section>
 )
 
 export default Sponsors 

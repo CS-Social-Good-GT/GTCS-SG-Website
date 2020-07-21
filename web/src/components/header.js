@@ -14,12 +14,12 @@ const Styles = styled.section`
     position: fixed;
     top: 0;
     transition: .3s all ease-out;
-    box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.15);
+    //box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.15);
     padding-top: 20px;
     padding-left: 10%;
     padding-right: 10%;
     height: 70px;
-    background: white;
+    background: transparent; //changed from white
   }
   
   a {
@@ -27,7 +27,7 @@ const Styles = styled.section`
   }
 
   .nav-link, .nav-link:visited {
-    color: #2F2D2E;
+    color: #FFFF;
   }
 
   .nav-link:hover {
@@ -47,7 +47,7 @@ const Styles = styled.section`
   }
 
   .navbar-brand, {
-    color: #00e6e6;
+    color: white;
     display: inline-block;
     line-height: inherit;
     white-space: nowrap;
