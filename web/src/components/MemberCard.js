@@ -5,18 +5,26 @@ import { useStaticQuery, graphql } from "gatsby"
 const MemberCard = () => {
     const data = useStaticQuery(graphql`
     query MyQuery {
-        allSanityTeam {
-          edges {
-            node {
+      allSanityTeam {
+        edges {
+          node {
+            description
+            name
+            members {
               name
-              members {
-                name
-                role
-                yearJoined
+              role
+              yearJoined
+              image {
+                asset {
+                  fluid {
+                    src
+                  }
+                }
               }
             }
           }
         }
       }
+    }
       `)
 }
