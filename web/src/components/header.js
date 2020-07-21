@@ -27,7 +27,7 @@ const Styles = styled.section`
   }
 
   .nav-link, .nav-link:visited {
-    color: #FFFF;
+    color: #FFFF; //changed from blue
   }
 
   .nav-link:hover {
