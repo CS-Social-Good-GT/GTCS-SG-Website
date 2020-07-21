@@ -11,7 +11,7 @@ const Styles = styled.div`
     padding-bottom: 8%;
     -webkit-tap-highlight-color: transparent;
     color: white;
-    background-image: url(${logo});
+    background: linear-gradient(0deg, rgba(72,72,74,0.7), rgba(72,72,74,0.7)), url(${logo});
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from "../components/image"
 import React from "react"
 
 const Styles = styled.section`
@@ -8,26 +9,36 @@ const Styles = styled.section`
         width: 300px;
         background-color: white;
         text-align: center;
-        display: flex;
         padding: 10px;
-        border: none;
+        border: 1px solid rgba(0, 0, 0, 0.125);
         margin: 20px;
-        -moz-box-shadow: 0 15px 40px rgba(250, 167, 68, 0.5);
-        -webkit-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
-        box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+        position: relative;
+        border-radius: 0.25rem;
     }
     .card-img-top {
-        height: 40px;
-        width: 230px;
+        height: 150px;
+        width: 100%;
         transition: display 0.4s;
-        z-index: 1;
         top: 10px;
         left: 10px;
         display: block;
+        object-fit: cover;
     }
     .card-body {
+        flex: 1 1 auto;
         display: block;
+        font-weight: 300;
+        text-align: center;
+    }
+    h4 {
+        font-weight: 300;
+    }
+    a {
+       color: #00e6e6;
+    }
 
+    a:hover {
+        color: #008080;
     }
 `;
 
@@ -39,7 +50,7 @@ const TeamCard = (props) => {
     return (
     <Styles>
         <div className="card">
-            <img className="card-img-top" src={image_src} alt="Team Logo"></img>
+            <img className="card-img-top" alt="Team Logo" src={image_src}></img>
             <div className="card-body">
                 <h4>{name}</h4>
                 <a className="learn-more">Learn more!</a>

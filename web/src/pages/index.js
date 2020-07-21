@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Styled from 'styled-components'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import HeroDiv from "../components/HeroDiv"
 import AboutUs from "../components/AboutUs"
