@@ -10,6 +10,7 @@ import TeamCardsDiv from "../components/TeamCardsDiv"
 import WorkDiv from "../components/WorkDiv"
 import Sponsors from "../components/Sponsors"
 import Footer from "../components/Footer"
+import MemberCard from "../components/MemberCard"
 
 
 const Styles = Styled.section`
@@ -32,6 +33,9 @@ const IndexPage = () => (
       </div>
       <div id='section-team'>
           <TeamCardsDiv />
+      </div>
+      <div>
+          <MemberCard></MemberCard>
       </div>
       <div id='section-work'>
           <WorkDiv />
