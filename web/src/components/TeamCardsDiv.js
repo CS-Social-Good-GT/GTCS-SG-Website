@@ -3,6 +3,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import logo from "../images/fun.jpg"
 import TeamCard from './TeamCard'
+import MemberDiv from './MemberDiv'
 
 
 const Styles = styled.div`
@@ -70,6 +71,7 @@ const teamCard = data.allSanityTeam.edges.map(item =>
 );
 
 return (
+  <div>
   <Styles>
     <div class="outer">
       <h2>Team</h2>
@@ -79,6 +81,9 @@ return (
       </div> 
    </div>
   </Styles>
+  <MemberDiv />
+  </div>
+
 )
  
 }
