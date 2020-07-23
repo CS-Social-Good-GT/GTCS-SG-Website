@@ -1,28 +1,51 @@
 import React from "react"
 import styled from 'styled-components'
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 const Styles = styled.section`
-   .container {
-     width: 100vw;
+  .outer {
+    background-color: #F8F9FA
+
+  }
+  .name-desc-div {
+    width: 100vw;
+    text-align: center;
+    
 
    }
    .member-card {
-    // -webkit-tap-highlight-color: transparent;
-    // font-size: 1rem;
-    // font-weight: 300;
-    // line-height: 1.8;
-    // color: #868e96;
-    // font-family: "Montserrat", Arial, sans-serif;
-    // box-sizing: inherit;
-    // position: relative;
-    // width: 100%;
-    // min-height: 1px;
-    // padding-right: 15px;
-    // padding-left: 15px;
-    display: block;
-   }
+    -webkit-tap-highlight-color: transparent;
+    font-weight: 300;
+    line-height: 1.8;
+    font-family: "Montserrat", Arial, sans-serif;
+    box-sizing: inherit;
+    //display: flex;
+    -webkit-box-align: start;
+    //align-items: flex-start;
+    //margin-bottom: 3rem !important;
+  }
+
+  .member-name-div {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: inherit;
+    //margin-bottom: 0.5rem;
+    font-family: inherit;
+    line-height: 1.1;
+    font-weight: 300 !important;
+    margin-top: 0 !important;
+    font-size: 14px;
+  }
+
+  .member-info-div {
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.8;
+    font-family: "Montserrat", Arial, sans-serif;
+    box-sizing: inherit;
+    //margin-top: 0;
+    //margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 14px!important;
+  }
+
    .img-circle {
     // -webkit-tap-highlight-color: transparent;
     // font-family: "Montserrat", Arial, sans-serif;
@@ -39,6 +62,12 @@ const Styles = styled.section`
     height: 78px;
     width: 78px;
    }
+   .col-lg {
+     
+   }
+   .all-member-div {
+    
+   }
    
    
    
@@ -47,37 +76,32 @@ const Styles = styled.section`
 
 const MemberCard = (props) => {
   const {name, image, description, members} = props
-  
+  const teamName = "Marketing"
     
     return (
       <Styles>
-        <div className="outer">
-          <div className="container"> 
-          <h1>{name}</h1> </div> 
+        {/* <div className="outer"> */}
+          <div className="name-desc-div"> 
+          <h1>{name}</h1>
           <p>{description}</p>
+          </div> 
           {members.map(member => {
             return (
               <div className='member-card'>
                 <div className="col-lg">
             <div className="media pb_media_v1 mb-5">
-              <div className="icon border border-gray rounded-circle d-flex mr-3 display-4 text-primary">
+              <div className="member-name-div">
                 <img className="img-circle" src={member.image.asset.fluid.src} alt="Member" />
               </div>
-              <div className="media-body">
+              <div className="media-info-div">
                 <h3 className="mt-0 pb_font-17">{member.name}</h3>
-                <p className="pb_font-14">{member.role}<br />Major<br />{member.yearJoined}</p>
+                <p className="pb_font-14">{member.role}<br />Major<br />Joined in {member.yearJoined}</p>
               </div>
             </div>
           </div>
-
-                {/* <img src={member.image.asset.fluid.src}></img>
-                <h2>{member.name}</h2>
-                <p>{member.role}</p>
-                <p>{member.yearJoined}</p> */}
               </div>
             )
           })}
-       </div>
       </Styles>
     )
 
