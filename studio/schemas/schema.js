@@ -6,6 +6,7 @@ import sponsor from './sponsor';
 import project from './project';
 import member from './member';
 import team from './team';
+import about from './about';
 
 export default createSchema({
   name: 'default',
@@ -15,6 +16,7 @@ export default createSchema({
     sponsor,
     project,
     member,
-    team
+    team,
+    about
   ])
 })
