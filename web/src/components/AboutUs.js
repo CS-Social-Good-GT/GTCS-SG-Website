@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+
 
 
 const Styles = styled.section`
@@ -84,23 +86,42 @@ const Styles = styled.section`
     }
 `;
 
-const AboutUs = () => (
-  <Styles>
-    <section id="section-about">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-5 pr-md-5 pr-sm-0">
-            <h2 className="mt-0 heading-border-top font-weight-normal" style={{color:'#2F2D2E'}}>About</h2>
-            <p style={{color: '#2F2D2E'}}>Georgia Tech’s CS+Social Good is an organization that focuses on the intersection of STEM and social impact. Striving to build a community of passionate computer scientists and engineers who are applying their technical knowledge towards solving the world’s biggest problems, CS+Social Good is changing the way students understand the value behind a computer science education and its applications worldwide.
-          </p>
-          </div>
-          <div className="col-lg-7">
-              <img className="img1 img-fluid" src="https://d33wubrfki0l68.cloudfront.net/7c19c46d3da2482315d12971e4b346a13702bf15/4d9dc/assets/images/team.jpg" alt="Team Picture"></img>
-          </div>
-        </div>
-      </div>  
-    </section>
-  </Styles>
-)
+
+
+function AboutUs()  {
+    const data = useStaticQuery(graphql`
+    query aboutQuery {
+        allSanityAbout {
+            edges {
+              node {
+                aboutUs
+              }
+            }
+          }
+        }
+    `)
+    // console.log(data.allSanityAbout.edges.node.aboutUs)
+
+    return ( 
+        <Styles>
+        <section id="section-about">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-5 pr-md-5 pr-sm-0">
+                <h2 className="mt-0 heading-border-top font-weight-normal" style={{color:'#2F2D2E'}}>About</h2>
+                <p style={{color: '#2F2D2E'}}>
+                    {/* {query.allSanityAbout.edges.nodes.aboutUs}. */}
+              </p>
+              </div>
+              <div className="col-lg-7">
+                  <img className="img1 img-fluid" src="https://d33wubrfki0l68.cloudfront.net/7c19c46d3da2482315d12971e4b346a13702bf15/4d9dc/assets/images/team.jpg" alt="Team Picture"></img>
+              </div>
+            </div>
+          </div>  
+        </section>
+      </Styles>  
+    )
+
+}
 
 export default AboutUs 
