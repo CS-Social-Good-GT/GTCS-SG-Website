@@ -7,3 +7,7 @@ html {
 .sticky {
     background-color: black;
 }
+
+.nav-active {
+    color: #00e6e6;
+}

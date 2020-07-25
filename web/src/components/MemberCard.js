@@ -33,7 +33,7 @@ const Styles = styled.section`
   `
 
 const MemberCard = (props) => {
-  const {id, name, image, description, members} = props
+  const {id, name, description, members} = props
   // const teamName = "Marketing"
   
     return (

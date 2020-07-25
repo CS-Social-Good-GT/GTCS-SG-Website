@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Styled from 'styled-components'
 
 import Layout from "../components/layout"
@@ -10,7 +9,6 @@ import TeamCardsDiv from "../components/TeamCardsDiv"
 import WorkDiv from "../components/WorkDiv"
 import Sponsors from "../components/Sponsors"
 import Footer from "../components/Footer"
-import MemberDiv from "../components/MemberCard"
 
 
 const Styles = Styled.section`
