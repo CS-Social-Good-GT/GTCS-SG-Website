@@ -43,25 +43,54 @@ const Styles = styled.section`
 
     a:hover {
         color: #008080;
-    
+    }
+
+    button {
+        background-color: transparent !important;
+        border: none !important;
+        color: #00e6e6 !important;
+    }
 `;
 
 
 const TeamCard = (props) => {
-  const {name, image} = props
+  const {name, image, allNames} = props
   const image_src = image.asset.fluid.src;
+  function findPos(obj) {
+    var curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+    return [curtop];
+    }
+  }
+  const handleDivOpen = () => {
+    let target = document.getElementById(name)
+    if (target.style.display !== 'block') {
+        let clearAll = (value) => {
+            document.getElementById(value).style.display = 'none';
+        }
+        allNames.forEach(clearAll)
+        target.style.display = 'block';
+        window.scrollTo({top:findPos(target), behavior:'smooth'});
+    } else {
+        target.style.display = 'none';
+    } 
+  }   
 
-    return (
-    <Styles>
-        <div className="card">
-            <img className="card-img-top" alt="Team Logo" src={image_src}></img>
-            <div className="card-body">
-                <h4>{name}</h4>
-                <a className="learn-more">Learn more!</a>
-            </div>
+return (
+<Styles>
+    <div className="card">
+        <img className="card-img-top" alt="Team Logo" src={image_src}></img>
+        <div className="card-body">
+            <h4>{name}</h4>
+            <button className="learn-more" onClick={handleDivOpen}> Learn more! </button>
+            {/* <a className="learn-more">Learn more!</a> */}
         </div>
-    </Styles>
-    )
+    </div>
+</Styles>
+)
  
 }
 

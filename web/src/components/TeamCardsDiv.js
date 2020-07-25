@@ -62,30 +62,32 @@ const TeamCardsDiv = () => {
       }
     }
   }`)
-console.log(data)
+  console.log(data)
 
+  var allNames = [];
+  let i = 0;
+  for (i=0; i<data.allSanityTeam.edges.length; i++) {
+    allNames.push(data.allSanityTeam.edges[i].node.name);
+  }
 
+  const teamCard = data.allSanityTeam.edges.map(item => 
+      <TeamCard name={item.node.name} image={item.node.header} allNames={allNames}/>
+  );
 
-const teamCard = data.allSanityTeam.edges.map(item => 
-    <TeamCard name={item.node.name} image={item.node.header}/>
-);
-
-return (
-  <div>
-  <Styles>
-    <div class="outer">
-      <h2>Team</h2>
-      <p> Our team is comprised of 6 teams- inspiration, education, engagement, marketing, finance, and bonding. All of these teams dedicate passion and copious time to create the excellent events we host on campus and locally.</p>
-      <div className="container"> 
-        {teamCard}
-      </div> 
-   </div>
-  </Styles>
-  <MemberDiv />
-  </div>
-
-)
- 
+  return (
+    <div>
+    <Styles>
+      <div class="outer">
+        <h2>Team</h2>
+        <p> Our team is comprised of 6 teams- inspiration, education, engagement, marketing, finance, and bonding. All of these teams dedicate themselves to fulfilling our mission on campus and locally.</p>
+        <div className="container"> 
+          {teamCard}
+        </div> 
+    </div>
+    </Styles>
+    <MemberDiv />
+    </div>
+  )
 }
 
 export default TeamCardsDiv 

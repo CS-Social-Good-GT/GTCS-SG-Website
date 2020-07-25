@@ -40,8 +40,10 @@ const MemberDiv = () => {
 
 
 const memberCard = data.allSanityTeam.edges.map(item => 
-    <MemberCard name={item.node.name} image={item.node.header} description={item.node.description} members={item.node.members}/>
+    <MemberCard id={item.node.name} name={item.node.name} image={item.node.header} description={item.node.description} members={item.node.members}/>
 );
+
+// const memberCard = <MemberCard id={data.allSanityTeam.edges[3].node.name} name={data.allSanityTeam.edges[0].node.name} image={data.allSanityTeam.edges[0].node.header} description={data.allSanityTeam.edges[0].node.description} members={data.allSanityTeam.edges[0].node.members}/>
 
 console.log(data)
 return (
