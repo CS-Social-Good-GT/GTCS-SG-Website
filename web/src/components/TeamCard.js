@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Image from "../components/image"
 import React from "react"
 
 const Styles = styled.section`

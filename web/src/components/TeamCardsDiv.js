@@ -47,7 +47,7 @@ const TeamCardsDiv = () => {
   const data = useStaticQuery(graphql`
 
   query MyQueryTeams {
-    allSanityTeam {
+    allSanityTeam(sort: {order: ASC, fields: ordering}) {
       edges {
         node {
           name
