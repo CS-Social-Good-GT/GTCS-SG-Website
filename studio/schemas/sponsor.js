@@ -9,9 +9,9 @@ export default {
         type: 'string'
       },
       {
-        name: 'url',
-        title: 'URL',
-        type: 'url'
-      }
+        name: 'header',
+        title: 'Header Image',
+        type: 'image'
+      },
     ]
   }

@@ -90,17 +90,18 @@ const Styles = styled.section`
 
 function AboutUs()  {
     const data = useStaticQuery(graphql`
-    query aboutQuery {
+    query AboutQuery {
         allSanityAbout {
-            edges {
-              node {
-                aboutUs
-              }
+          edges {
+            node {
+              aboutUs
             }
           }
         }
+      }
+      
     `)
-    // console.log(data.allSanityAbout.edges.node.aboutUs)
+    console.log(data)
 
     return ( 
         <Styles>
@@ -109,9 +110,7 @@ function AboutUs()  {
             <div className="row">
               <div className="col-lg-5 pr-md-5 pr-sm-0">
                 <h2 className="mt-0 heading-border-top font-weight-normal" style={{color:'#2F2D2E'}}>About</h2>
-                <p style={{color: '#2F2D2E'}}>
-                    {/* {query.allSanityAbout.edges.nodes.aboutUs}. */}
-              </p>
+                <p style={{color: '#2F2D2E'}}>{data.allSanityAbout.edges[0].node.aboutUs}</p>
               </div>
               <div className="col-lg-7">
                   <img className="img1 img-fluid" src="https://d33wubrfki0l68.cloudfront.net/7c19c46d3da2482315d12971e4b346a13702bf15/4d9dc/assets/images/team.jpg" alt="Team Picture"></img>

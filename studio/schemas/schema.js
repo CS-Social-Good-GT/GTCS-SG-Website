@@ -17,6 +17,6 @@ export default createSchema({
     project,
     member,
     team,
-    about
+    about,
   ])
 })
