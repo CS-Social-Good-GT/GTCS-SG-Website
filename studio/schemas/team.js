@@ -20,6 +20,11 @@ export default {
         type: 'image'
       },
       {
+        name: 'ordering',
+        title: 'Position',
+        type: 'number'
+      },
+      {
         name: 'members',
         title: 'Members',
         type: 'array',

@@ -84,9 +84,6 @@ const Sponsors = () => {
             <div className="row align-items-center justify-content-md-center">
                 {data.allSanitySponsor.edges.map(item => 
                     <img src={item.node.header.asset.fluid.src} alt={item.node.name} className='img-fluid'></img>)}
-                {/* <img src="https://d33wubrfki0l68.cloudfront.net/1fe285f2282b10d80794d73165bbcfbced4c8d4e/0bad4/assets/images/google.png" alt="Google" className="img-fluid"></img>
-                <img src="https://d33wubrfki0l68.cloudfront.net/922b4cb2905d42575b1208ec6df6d67b775debd0/4a9f5/assets/images/gtsf.jpg" alt="Georgia Tech Student Foundation logo" className="img-fluid"></img>
-                <img src="https://d33wubrfki0l68.cloudfront.net/cef2169701f8afcecf436e28c266ed3f7d5eb0f7/b1865/assets/images/parentsfund.png" alt="Parent's Fund Logo" className="img-fluid"></img> */}
             </div> <br></br>
             <p className="sub-heading">Contact us to learn more about how you can support our mission and become an official sponsor.</p>
             <a href="#section-contact" role="button" className="btn smoothscroll">SPONSOR US</a>
