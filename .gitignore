@@ -76,3 +76,4 @@ yarn-error.log
 
 .history
 node_modules
+sanity/node_modules

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
+import teamphoto from '../images/team-photo.jpg'
 
 
 const Styles = styled.section`
@@ -113,7 +113,7 @@ function AboutUs()  {
                 <p style={{color: '#2F2D2E'}}>{data.allSanityAbout.edges[0].node.aboutUs}</p>
               </div>
               <div className="col-lg-7">
-                  <img className="img1 img-fluid" src="https://d33wubrfki0l68.cloudfront.net/7c19c46d3da2482315d12971e4b346a13702bf15/4d9dc/assets/images/team.jpg" alt="Team Picture"></img>
+                  <img className="img1 img-fluid" src={teamphoto} alt="Team Picture"></img>
               </div>
             </div>
           </div>  

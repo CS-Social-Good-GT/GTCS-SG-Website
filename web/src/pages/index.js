@@ -12,6 +12,8 @@ import Footer from "../components/Footer"
 
 
 const Styles = Styled.section`
+  max-width: 100vw;
+  overflow-x: hidden;
    //add any styles here (as if this were a css file)
    .container {
      width: 100vw;
