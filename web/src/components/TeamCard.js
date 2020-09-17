@@ -13,16 +13,16 @@ const Styles = styled.section`
         margin: 20px;
         position: relative;
         border-radius: 0.25rem;
-
-        
     }
     .card-img-top {
-        height: 60%;
-        width: 70%;
+        padding-top: 10%;
+        height: 50%;
+        max-width: 50%;
+        // max-height: 100%;
         transition: display 0.4s;
         top: 10px;
         left: 10px;
-        object-fit: cover;
+        object-fit: contain;
         text-align: center;
     }
     .card-body {

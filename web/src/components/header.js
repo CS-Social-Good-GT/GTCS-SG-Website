@@ -169,7 +169,6 @@ const Header = () => {
           <a className='navbar-brand' href="">GT CS + Social Good</a>
           <div className="links">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item"><a id='home-link' className="nav-link" href="#section-home">Home</a></li>
               <li className="nav-item"><a id='about-link' className="nav-link" href="#section-about">About</a></li>
               <li className="nav-item"><a id='team-link' className="nav-link" href="#section-team">Team</a></li>
               <li className="nav-item"><a id='work-link' className="nav-link" href="#section-work">Work</a></li>

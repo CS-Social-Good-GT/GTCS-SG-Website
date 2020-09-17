@@ -76,7 +76,7 @@ return (
             </div>
             <div className="media-info-div">
                 <h3 className="mt-0 pb_font-17">{name}</h3>
-                <p className="pb_font-14">{role}<br />Major<br />Joined in {yearJoined}</p>
+                <p className="pb_font-14">{role}<br />Joined in {yearJoined}</p>
             </div>
         </div>
     </div>

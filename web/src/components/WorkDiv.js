@@ -166,11 +166,12 @@ const WorkDiv = () => {
         }
       }
       `);
+  
 
   const workDropdown = data.allSanityProject.edges.map(item => 
     <div className="tab">
       <input type="checkbox" id={String(item.node._id)}></input>
-      <label className="tab-label" for={String(item.node._id)}>{item.node.title}</label>
+      <label className="tab-label" for={String(item.node._id)}>{item.node.title} <span id={String(item.node._id)}>+</span></label>
       <div className="tab-content">
         {item.node.description}
       </div>
@@ -185,7 +186,7 @@ const WorkDiv = () => {
     <div className="row">
       <div className="col-md-8">
         <h2 className="mt-0 heading-border-top font-weight-normal" style={{color:'#2F2D2E'}}>Work</h2>
-        <p style={{color: '#868e96'}}>We have partnered with different companies, startups and organizations to host events on Georgia Tech's campus, focused on technology and social good. Some examples include Affirm, Kabbage, Black Girls Code & oSTEM. We also go off campus to bring CS education to local schools. 
+        <p style={{color: '#868e96'}}>We have partnered with different companies, startups and organizations to host events on Georgia Tech's campus, focused on technology and social good. We also go off campus to bring CS education to local schools. 
       </p>
       </div>
     </div>  
