@@ -166,7 +166,7 @@ const Footer = () => (
                 <ul className="pb_contact_details_v1 text-center">
                 <li>
                     <span className="text-uppercase">FACEBOOK</span><br></br>
-                    <a href="https://www.facebook.com/cssggt/" target="blank">Facebook</a>
+                    <a href="https://www.facebook.com/gtcssg/" target="blank">Facebook</a>
                 </li>
                 </ul>
             </div>

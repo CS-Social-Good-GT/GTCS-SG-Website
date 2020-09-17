@@ -13,16 +13,16 @@ const Styles = styled.section`
         margin: 20px;
         position: relative;
         border-radius: 0.25rem;
-
-        
     }
     .card-img-top {
-        height: 60%;
-        width: 70%;
+        padding-top: 10%;
+        height: 50%;
+        max-width: 50%;
+        // max-height: 100%;
         transition: display 0.4s;
         top: 10px;
         left: 10px;
-        object-fit: cover;
+        object-fit: contain;
         text-align: center;
     }
     .card-body {
@@ -72,7 +72,11 @@ const TeamCard = (props) => {
         }
         allNames.forEach(clearAll)
         target.style.display = 'block';
-        window.scrollTo({top:findPos(target), behavior:'smooth'});
+        if (typeof window === 'undefined') {
+            global.window = {}
+        } else {
+            window.scrollTo({top:findPos(target), behavior:'smooth'});
+        }
     } else {
         target.style.display = 'none';
     } 
